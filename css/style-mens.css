@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/*Navegador*/
+header{
+    height: 22%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%; 
+}
+header.barra{
+    background: #fff; 
+    box-shadow:  0px 0px 10px #948c75;
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color:  #1f1c10;
+    
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 600; 
+    padding: 10px 20px; 
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: #3c382c;
+    border: 2px solid #3c382c;
+    border-radius: 5px;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 15px;
+    color: #1f1c10;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all .42s ease-in;
+}
+.nav-icon i{ 
+    color: #3c382c; 
+}
+#menu-icon{
+    font-size: 35px;
+    color: #1f1c10 ;
+    z-index: 10001;
+    cursor: pointer;
+}
+.buscador{   
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    transition: all 0.5s ease;
+}
+.Text-buscar{
+    flex: 0;
+    padding: 8px;
+    width: 0;
+    opacity: 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all .7s ease;
+} 
+.buscador.active .Text-buscar {
+    flex: 1; 
+    width: 250px; 
+    opacity: 1; 
+}
+
+.buscador .btn-buscar {
+    cursor: pointer;
+}
+
+.buscador .btn-buscar i {
+    transition: transform 0.5s ease;
+}
+
+.buscador.active .btn-buscar i {
+    transform: rotate(-360deg); 
+}
+
+/*Primera seccion banner*/
+section{
+    padding: 12% 10%;  
+}
+.principal { 
+    width: 100%;
+    height: 100vh; 
+    display: grid;
+    text-align: center;
+}    
+.principal-text h1{
+    color: #1f1c10;
+    font-size: 54px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.principal-text p{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.principal-btn{
+    display:inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 3px solid #111;
+    padding: 12px 15px;
+    transition: all .42s ease;
+}
+.principal-btn:hover{
+    background-color: #111;
+    color: #fff;
+}
+.principal.btn i{
+    vertical-align: middle;
+}
+/*flecha banner*/
+.flecha-abajo{
+    position: absolute;
+    top: 75%;
+    right: 10%;
+}
+.abajo i{
+    font-size: 30px;
+    color: #3c382c; 
+    border: 2px solid #3c382c;
+    border-radius: 45px;
+    padding: 7px 7px;
+}
+.abajo i:hover{
+    background-color: #111;
+    color: #fff;
+}
+
+/*La seccion top*/
+.text-central{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.text-central span{
+    color: red;
+} 
+/*Productos imagenes*/
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 1rem;
+}
+.fila{
+    position: relative;
+    transition: all .40s;
+}
+.fila img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+.fila img:hover{
+    transform: scale(0.95);
+}
+
+/*Texto de productos*/
+.text-product{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 3px 10px;
+}
+.corazon-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.corazon-icon:hover{
+    color: red;
+}  
+.add-product{
+    text-align:right;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+.precio h4{
+    color: #111;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.precio p{
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+} 
+
+.oferta  p{
+color:red;
+}
+
+/*Descuento*/
+.descuento{
+    width: 100%; 
+    height: 20vh;
+    background-color: #111;
+    justify-content: center;
+    align-items: center; 
+}
+.cupon{
+    text-align: center;
+    padding-top: 15px; 
+}
+.cupon h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.cupon span{
+    color: red;
+    text-align: 21px;
+    font-weight: 900;
+}
+
+/*boton cupon*/
+.registro-btn{
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    border: 3px solid #fff; 
+    padding: 10px 50px;
+    border-radius: 30px;
+}
+.registro-btn:hover{ 
+    background-color: #7a77779d;
+}
+
+/*Contacto*/ 
+.contacto{
+    background-color: beige;
+    height:40vh;
+    padding-top: 20px;
+    
+}
+.contacto-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+
+.info-1 img{
+    width: 140px;
+    height: auto;
+}
+.contacto-info h4{
+    color: #111;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contacto-info p{
+    color: #585447;
+    font-size: 14px;
+    font-weight: 400;
+    
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    line-height: 15px;
+    cursor: pointer;
+    transition: all .42s;
+}
+.contacto-info p:hover{
+    color: #111;
+}
+.icon-social i{
+    color: #585447;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+.icon-social i:hover{
+    transform: scale(1.3);
+}
+
+/*Texto final copyright*/
+.text-final{
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+}
+.text-final p{
+    color: #111;
+    text-transform: capitalize;
+}
+
+/*Responsivo*/
+@media (max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+
+@media (max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+    .navmenu.open{
+        right: 0;
+    }
+}

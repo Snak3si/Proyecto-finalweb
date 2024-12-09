@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: none;
+    font-family: "Popppins", sans-serif;
+    color: white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section{
+    background-color:#6b6767;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-box{
+    
+    background-color: rgba(255, 255, 255, 0.096);
+    backdrop-filter:blur(100px);
+    border: 5px solid #d9ceb2;
+    box-shadow: inset 0 0 5px #948c75;
+    border-radius: 10px;
+    height: 85vh;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-red{
+    padding: 20px 50px;
+}
+
+.contenido-inicio h3{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 30px; 
+    margin-top: -100px;
+    text-align: center;
+}
+.contenido-inicio h1{
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+}
+.contenido-inicio{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contenido-img{ 
+    display: flex;
+    height: 100%;
+    padding: 0 50px;
+    gap: 80px;
+    justify-content: center;
+} 
+.content-izq, .content-der{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-inicio{
+    width: 20vw; 
+    height: 35vh; 
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+/*boton inicio*/ 
+
+.btn-inicio{
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center; 
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    height: 30px;
+    width: 180px;
+    margin-top: 9px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-inicio:hover{
+    background-color: #d5ded9;
+    color: black;
+}
+
+
+.text-final{
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+}
+.text-final p{
+    color: #111;
+    text-transform: capitalize;
+}
